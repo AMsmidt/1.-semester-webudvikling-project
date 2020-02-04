@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Admin site</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Admin site</h1>
+        <nav>
+            <a href="/home">Homepage</a>
+            <a href="/mating">Mating request</a>
+            <a href="/admin" class="active">Admin site (ONLY for admins)</a>
+            <a class="logout" href="/logout">Logout</a>
+        </nav>
+    </header>
+    <div class="div1">
+        <h3>Answer or update a mating request</h3>
+        <input id="MatingID" type="text" name="MatingID" placeholder="MatingID">
+        <input id="Approved" type="text" name="Approved" placeholder="Approved">
+        <input id="Result" type="text" name="Result" placeholder="Result">
+        <button onclick="updatemating()">Update</button>
+        <div id="updatecontainer"></div>
+    </div>
+    <div class="div2">
+        <h3>Delete mating request</h3>
+        <input id="MatingIDdel" type="text" name="MatingIDdel" placeholder="MatingID">
+        <button onclick="deletemating()">Delete</button>
+        <div id="deletecontainer"></div>
+    </div>
+    <script src="js/admin.js"></script>
+</body>
+
+</html>

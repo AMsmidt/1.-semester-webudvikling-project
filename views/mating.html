@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mating Request</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Request a mating</h1>
+        <nav>
+            <a href="/home">Homepage</a>
+            <a href="/mating" class="active">Mating request</a>
+            <a href="/admin">Admin site (ONLY for admins)</a>
+            <a class="logout" href="/logout">Logout</a>
+        </nav>
+    </header>
+    <div class="div1">
+        <h3>Search for a dog by sex (M or F):</h3>
+        <input id="sex" type="text" name="sex" placeholder="Sex">
+        <button id="search" onclick="getmatings()">Search</button>
+        <div id="sexcontainer"></div>
+    </div>
+
+    <div class="div2">
+        <h3>Choose the dogs</h3>
+        <p>Please leave a comment when the female is in heat.</p>
+        <form id="reqform" form name="reqform" method="post">
+            <input id="FK_dogID_Male" type="text" name="FK_dogID_Male" placeholder="Male dog id">
+            <input id="FK_dogID_Female" type="text" name="FK_dogID_Female" placeholder="Female dog id">
+            <input id="Comment" type="text" name="Comment" placeholder="comment">
+            <button>Send Request</button>
+        </form>
+        <div id="reqcontainer"></div>
+    </div>
+
+    <script src="js/ajax.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    margin: 0;
+    padding-top: 2%;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    padding-bottom: 16%;
+}
+
+header{
+    margin: 0;
+    display: block;
+    background-image: url('/images/dog.jpg');
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+nav{
+    display: block;
+    padding: 2%;
+    width: 96%;
+    background-color: lightgray;
+    margin-bottom: 2%;
+    text-align: center;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+    padding-right: 1%;
+    padding-left: 1%;
+}
+
+.logout{
+    float: right;
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+.active {
+    text-decoration: underline;
+}
+
+/* Login site */
+.login-form {
+    margin-top: 2%;
+    margin-left: 38%;
+    width: 20%;
+    background-color: gray;
+    padding: 2%;
+}
+
+.login-form input {
+    display: block;
+    width: 100%;
+    margin-bottom: 2%;
+}
+
+/* other pages */
+.div1{
+    width: 48%;
+    float: left;
+    padding: 0 1%;
+}
+
+.div2 {
+    width: 48%;
+    overflow: hidden;
+    padding: 0 1%;
+}
